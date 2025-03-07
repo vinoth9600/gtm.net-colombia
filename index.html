@@ -13,3 +13,17 @@
 	data-domain-uuid="893c7633-cbad-45e4-85d0-f948069ea291"
 	data-backend-url="https://app.securiti.ai">
 </script>
+
+<script>
+const script = document.querySelector('script[data-domain-uuid]')
+script.addEventListener('load', () => {
+// invoke setConsentBannerParams
+window.setConsentBannerParams({
+overrideBannerLanguage: {
+‘https://www.medenrich.com/colombia/’: ‘es’
+‘https://www.medenrich.com/brazil/’: ‘pt’
+}
+})
+})
+</script>
+
